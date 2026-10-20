@@ -9,7 +9,7 @@ Scarica il pacchetto per il tuo sistema:
 | Sistema | Ultima versione |
 | --- | --- |
 | Windows x64 | [Scarica l’eseguibile v1.1.2](https://github.com/lorbb/financialStatements-releases/releases/download/v1.1.2/FinancialStatements-1.1.2-windows-x64.exe) |
-| Fedora 44 x64 | [Scarica il pacchetto](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-fedora-x64.tar.gz) |
+| Fedora 44 x64 | [Scarica il pacchetto con icona e collegamento](https://github.com/lorbb/financialStatements-releases/releases/download/v1.1.2/FinancialStatements-1.1.2-fedora-x64-desktop.tar.gz) |
 | macOS 15 Apple Silicon (M1 e successivi) | [Scarica il pacchetto ARM64](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-macos-arm64.tar.gz) |
 | macOS 15 Intel | [Scarica il pacchetto x64](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-macos-x64.tar.gz) |
 
@@ -17,7 +17,7 @@ Il download Windows usa un nome con la versione per evitare che Esplora file riu
 
 [Versioni e checksum SHA-256](https://github.com/lorbb/financialStatements-releases/releases)
 
-Non occorre installare Python o Codex. Su Windows salva l’eseguibile in una cartella personale scrivibile. Su Fedora estrai l’archivio e avvia `./FinancialStatements-fedora-x64`. Su macOS estrai l’archivio e apri `Financial Statements.app`, collocandola in una cartella scrivibile, per esempio `~/Applications`. Le app macOS sono firmate ad-hoc e non notarizzate Apple; la prima apertura è soggetta ai normali controlli del sistema.
+Non occorre installare Python o Codex. Su Windows salva l’eseguibile in una cartella personale scrivibile. Su Fedora estrai l’intera cartella nella destinazione definitiva, apri un terminale nella cartella ed esegui `sh ./Installa-collegamento.sh`. Poi avvia **Financial Statements** dal menu applicazioni o dal collegamento `FinancialStatements.desktop`. Se richiesto dal file manager, seleziona **Consenti avvio**. Se sposti la cartella, riesegui lo script. Il collegamento mostra il logo; il file ELF può mantenere un’icona generica in alcuni file manager. Su macOS estrai l’archivio e apri `Financial Statements.app`, collocandola in una cartella scrivibile, per esempio `~/Applications`. Le app macOS sono firmate ad-hoc e non notarizzate Apple; la prima apertura è soggetta ai normali controlli del sistema.
 
 ## Utilizzo
 
