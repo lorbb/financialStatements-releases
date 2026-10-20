@@ -8,10 +8,12 @@ Scarica il pacchetto per il tuo sistema:
 
 | Sistema | Ultima versione |
 | --- | --- |
-| Windows x64 | [Scarica l’eseguibile](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-windows-x64.exe) |
+| Windows x64 | [Scarica l’eseguibile v1.1.2](https://github.com/lorbb/financialStatements-releases/releases/download/v1.1.2/FinancialStatements-1.1.2-windows-x64.exe) |
 | Fedora 44 x64 | [Scarica il pacchetto](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-fedora-x64.tar.gz) |
 | macOS 15 Apple Silicon (M1 e successivi) | [Scarica il pacchetto ARM64](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-macos-arm64.tar.gz) |
 | macOS 15 Intel | [Scarica il pacchetto x64](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-macos-x64.tar.gz) |
+
+Il download Windows usa un nome con la versione per evitare che Esplora file riutilizzi l’icona Python di un eseguibile precedente. Conservare il nome scaricato. Il programma è la stessa v1.1.2; il file originale rimane disponibile per gli aggiornamenti automatici.
 
 [Versioni e checksum SHA-256](https://github.com/lorbb/financialStatements-releases/releases)
 
