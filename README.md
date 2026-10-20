@@ -1,23 +1,32 @@
-# Financial Statements — Windows
+# Financial Statements — Windows, Fedora e macOS
 
 Applicazione per analizzare bilanci SEC/ESEF e creare file Excel con indicatori finanziari.
 
 ## Download
 
-[Scarica l’ultima versione Windows x64](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-windows-x64.exe)
+Scarica il pacchetto per il tuo sistema:
+
+| Sistema | Ultima versione |
+| --- | --- |
+| Windows x64 | [Scarica l’eseguibile](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-windows-x64.exe) |
+| Fedora 44 x64 | [Scarica il pacchetto](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-fedora-x64.tar.gz) |
+| macOS 15 Apple Silicon (M1 e successivi) | [Scarica il pacchetto ARM64](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-macos-arm64.tar.gz) |
+| macOS 15 Intel | [Scarica il pacchetto x64](https://github.com/lorbb/financialStatements-releases/releases/latest/download/FinancialStatements-macos-x64.tar.gz) |
 
 [Versioni e checksum SHA-256](https://github.com/lorbb/financialStatements-releases/releases)
 
-Scarica l’eseguibile e salvalo in una cartella personale scrivibile. Non occorre installare Python o Codex.
+Non occorre installare Python o Codex. Su Windows salva l’eseguibile in una cartella personale scrivibile. Su Fedora estrai l’archivio e avvia `./FinancialStatements-fedora-x64`. Su macOS estrai l’archivio e apri `Financial Statements.app`, collocandola in una cartella scrivibile, per esempio `~/Applications`. Le app macOS sono firmate ad-hoc e non notarizzate Apple; la prima apertura è soggetta ai normali controlli del sistema.
 
 ## Utilizzo
 
-Apri l’applicazione, cerca una società e premi **Crea o aggiorna analisi Excel**. Bilanci, file dati e confronti vengono salvati in **Documenti\FinancialStatements**. Per conservare le rettifiche, mantieni il file `.source.json` accanto al relativo Excel.
+Apri l’applicazione, cerca una società e premi **Crea o aggiorna analisi Excel**. La destinazione predefinita è la sottocartella **financialStatements** della cartella di lavoro da cui viene avviata l’app. Se Finder avvia l’app dalla radice del sistema o dall’interno del bundle macOS, viene usata la home dell’utente (`~/financialStatements`). Il percorso effettivo è mostrato nella GUI.
+
+Da **Cartella di salvataggio → Cambia cartella…** puoi scegliere un’altra destinazione per la sessione. La cartella viene creata solo quando avvii il salvataggio dei bilanci: aprire l’app, cercare una società o scegliere il percorso non crea una cartella di bilanci. I file esistenti non vengono spostati. Per conservare le rettifiche, mantieni il file `.source.json` accanto al relativo Excel.
 
 ## Aggiornamenti
 
-All’avvio l’app controlla se è disponibile una nuova versione e chiede conferma prima di scaricarla e installarla. Verifica il checksum, conserva la copia precedente e riavvia l’app. Gli Excel salvati restano separati dall’eseguibile.
+All’avvio, su Windows, Fedora e macOS, l’app controlla se è disponibile una nuova versione e chiede conferma prima di scaricarla e installarla. Verifica dimensione e checksum SHA-256, riavvia l’app e rimuove la copia precedente dopo la conferma che la nuova versione funziona. Se l’avvio fallisce, tenta il ripristino della versione precedente. Gli Excel salvati vengono conservati.
 
 Puoi ripetere il controllo dal menu **Aggiornamenti**. Senza connessione il controllo non blocca l’apertura dell’app; il download di nuovi bilanci richiede Internet.
 
-Questo repository pubblico contiene la distribuzione Windows e le istruzioni. Il progetto sorgente è mantenuto in un repository privato.
+Questo repository pubblico contiene i pacchetti per Windows, Fedora e macOS e le istruzioni. Il progetto sorgente è mantenuto in un repository privato.
